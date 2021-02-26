@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { GetServerSideProps } from "next";
-import Cookies from "js-cookie";
 
 import styles from "../styles/pages/Home.module.css";
 
