@@ -72,10 +72,16 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
     if (finalExperiense >= experienceToNextLevel) {
       finalExperiense = finalExperiense - experienceToNextLevel;
-      levelUp();
+      setCurrentExperience(experienceToNextLevel);
+
+      setTimeout(() => {
+        levelUp();
+        setCurrentExperience(finalExperiense);
+      }, 3000);
+    } else {
+      setCurrentExperience(finalExperiense);
     }
 
-    setCurrentExperience(finalExperiense);
     setActiveChallenge(null);
     setChallengesCompleted(challengesCompleted + 1);
   }

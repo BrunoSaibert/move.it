@@ -19,7 +19,7 @@ export function ExperienceBar() {
       <div>
         <div style={{ width: `${percentToNextLevel}%` }} />
 
-        {percentToNextLevel > 0 && (
+        {percentToNextLevel > 0 && percentToNextLevel < 100 && (
           <span
             className={styles.currentExperience}
             style={{ left: `${percentToNextLevel}%` }}
