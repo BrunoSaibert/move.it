@@ -50,3 +50,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+main {
+  margin-left: 8rem;
+}
