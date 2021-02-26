@@ -23,7 +23,7 @@ interface CountdownProviderProps {
 
 export const CountdownContext = createContext({} as CountdownContextData);
 
-const maxMinutes = 0.1 * 60;
+const maxMinutes = 25 * 60;
 
 let countdownTimeout: NodeJS.Timeout;
 
