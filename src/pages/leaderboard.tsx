@@ -18,7 +18,9 @@ export default function Leaderboard() {
       <section>
         <header>
           <p className={styles.legend}>Posição</p>
-          <p className={styles.legend}>Usuário</p>
+          <p className={styles.legend} style={{ marginLeft: "1.5rem" }}>
+            Usuário
+          </p>
           <p className={styles.legend}>Desafios</p>
           <p className={styles.legend}>Experiência</p>
         </header>
