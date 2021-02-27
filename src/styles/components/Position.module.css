@@ -1,0 +1,72 @@
+/* Item */
+
+.positionItem {
+  background: var(--white);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Position */
+
+.positionNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  padding: 0 2rem;
+  height: 100%;
+
+  border-right: 4px solid #f0f1f3;
+}
+
+/* Profile */
+
+.positionProfile {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+}
+
+.positionProfile > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.positionProfile div {
+  margin-left: 1.5rem;
+}
+
+.positionProfile div strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.positionProfile div p {
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.positionProfile div p img {
+  margin-right: 0.5rem;
+}
+
+/* Details */
+
+.positionDetails {
+  padding-right: 0.5rem;
+  font-weight: 500;
+}
+
+.positionDetails span {
+  color: var(--blue);
+}

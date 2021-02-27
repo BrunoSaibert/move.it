@@ -26,7 +26,7 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
-      <div className={styles.container}>
+      <div className={`container ${styles.container}`}>
         <Head>
           <title>Início | move.it</title>
         </Head>
