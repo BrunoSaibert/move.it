@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  height: 5rem;
+}
+
+.container input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0.5rem 1.875rem;
+
+  color: var(--white);
+  background: linear-gradient(
+    90deg,
+    var(--blue-dark) 0%,
+    rgba(73, 83, 184, 0.2) 100%
+  );
+
+  border: 1.5px solid transparent;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.container input::placeholder {
+  color: var(--text-highlight);
+}
+
+.container button {
+  width: 5rem;
+  height: 100%;
+  outline: none;
+
+  border: 1.5px solid transparent;
+
+  background: var(--green);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.container input:hover,
+.container input:focus,
+.container button:hover,
+.container button:focus {
+  border-color: #414aa3;
+}
+
+.container button:disabled,
+.container button:disabled:hover {
+  cursor: not-allowed;
+  border-color: transparent;
+  background: var(--blue-dark);
+}
