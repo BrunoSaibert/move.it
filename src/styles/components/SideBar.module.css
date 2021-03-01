@@ -10,11 +10,25 @@
   flex-direction: column;
 
   height: 100vh;
+  min-width: 7rem;
 
   background: var(--white);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 
   padding: 2rem;
+}
+@media (max-width: 60rem) {
+  .sideBarContainer {
+    right: 0;
+    bottom: initial;
+
+    flex-direction: row;
+
+    width: 100%;
+    height: initial;
+
+    z-index: 99;
+  }
 }
 
 .sideBarContainer nav {
@@ -24,6 +38,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 60rem) {
+  .sideBarContainer nav {
+    flex-direction: row;
+  }
 }
 
 .sideBarContainer nav a {
@@ -45,9 +64,27 @@
 
   transform: translateY(-50%);
 }
+@media (max-width: 60rem) {
+  .sideBarContainer nav a.active::before {
+    width: 56px;
+    height: 4px;
+    border-radius: 0px 0px 5px 5px;
+
+    left: 50%;
+    top: calc(-2rem - 4px);
+
+    transform: translateX(-50%);
+  }
+}
 
 .sideBarContainer nav a:not(:first-child) {
   margin-top: 2rem;
+}
+@media (max-width: 60rem) {
+  .sideBarContainer nav a:not(:first-child) {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
 }
 
 .sideBarContainer nav a img {
