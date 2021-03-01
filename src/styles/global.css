@@ -51,14 +51,10 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin-left: 8rem;
-}
-
 .container {
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
-  margin: 0 auto;
+  margin-left: 7rem;
   padding: 2.5rem 2rem;
 }

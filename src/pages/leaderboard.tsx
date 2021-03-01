@@ -1,8 +1,7 @@
 import Head from "next/head";
-import React from "react";
 
 import { Position } from "../components/Position";
-// import { GetServerSideProps } from "next";
+import { SideBar } from "../components/SideBar";
 
 import styles from "../styles/pages/Leaderboard.module.css";
 
@@ -12,6 +11,8 @@ export default function Leaderboard() {
       <Head>
         <title>Início | move.it</title>
       </Head>
+
+      <SideBar />
 
       <h1>Leaderboard</h1>
 
