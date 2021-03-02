@@ -20,6 +20,11 @@
   font-size: 8.5rem;
   text-align: center;
 }
+@media (max-width: 60rem) {
+  .countdownContainer > div {
+    font-size: 6.5rem;
+  }
+}
 
 .countdownContainer > div span {
   flex: 1;
@@ -58,6 +63,12 @@
   font-weight: 600;
 
   transition: background-color 0.2s;
+}
+@media (max-width: 60rem) {
+  .countdownButton {
+    height: 4rem;
+    margin-top: 1rem;
+  }
 }
 
 .countdownButton img {

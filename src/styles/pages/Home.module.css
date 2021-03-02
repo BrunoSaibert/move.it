@@ -11,3 +11,12 @@
   gap: 6.25rem;
   align-content: center;
 }
+@media (max-width: 60rem) {
+  .container section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 2rem 0;
+  }
+}

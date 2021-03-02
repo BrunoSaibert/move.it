@@ -58,3 +58,9 @@ a {
   margin-left: 7rem;
   padding: 2.5rem 2rem;
 }
+@media (max-width: 60rem) {
+  .container {
+    padding: 0 2rem;
+    margin: 0;
+  }
+}

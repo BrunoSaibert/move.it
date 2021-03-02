@@ -19,13 +19,16 @@
 }
 @media (max-width: 60rem) {
   .sideBarContainer {
+    flex-direction: row;
+    justify-content: space-between;
+
     right: 0;
     bottom: initial;
 
-    flex-direction: row;
-
     width: 100%;
     height: initial;
+
+    padding: 1rem 2rem;
 
     z-index: 99;
   }
@@ -41,6 +44,7 @@
 }
 @media (max-width: 60rem) {
   .sideBarContainer nav {
+    flex: initial;
     flex-direction: row;
   }
 }
@@ -66,12 +70,12 @@
 }
 @media (max-width: 60rem) {
   .sideBarContainer nav a.active::before {
-    width: 56px;
+    width: 45px;
     height: 4px;
     border-radius: 0px 0px 5px 5px;
 
     left: 50%;
-    top: calc(-2rem - 4px);
+    top: calc(-1rem - 6px);
 
     transform: translateX(-50%);
   }
@@ -83,12 +87,18 @@
 @media (max-width: 60rem) {
   .sideBarContainer nav a:not(:first-child) {
     margin-top: 0;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 }
 
 .sideBarContainer nav a img {
   filter: grayscale(100%) invert(1);
+}
+@media (max-width: 60rem) {
+  .sideBarContainer nav a img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .sideBarContainer nav a.active img {

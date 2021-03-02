@@ -8,15 +8,31 @@
   height: 5.5rem;
   border-radius: 50%;
 }
+@media (max-width: 60rem) {
+  .profileContainer > img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
 
 .profileContainer div {
   margin-left: 1.5rem;
+}
+@media (max-width: 60rem) {
+  .profileContainer div {
+    margin-left: 0.5rem;
+  }
 }
 
 .profileContainer div strong {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--title);
+}
+@media (max-width: 60rem) {
+  .profileContainer div strong {
+    font-size: 1.125rem;
+  }
 }
 
 .profileContainer div p {
