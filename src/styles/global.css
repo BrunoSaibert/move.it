@@ -55,7 +55,7 @@ a {
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
   padding: 2.5rem 2rem;
 }
 @media (max-width: 60rem) {
