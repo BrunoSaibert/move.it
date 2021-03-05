@@ -1,5 +1,8 @@
 import Head from "next/head";
-import { Input } from "../components/Input";
+import { signIn } from "next-auth/client";
+import { IoLogoGoogle } from "react-icons/io";
+
+import { Button } from "../components/Button";
 
 import styles from "../styles/pages/Login.module.css";
 
@@ -16,12 +19,11 @@ export default function Login() {
 
           <h1>Bem-vindo</h1>
 
-          <p>
-            <img src="/icons/github.svg" alt="Github" />
-            Faça login com seu Github para começar
-          </p>
+          <p>Faça seu login para começar</p>
 
-          <Input />
+          <Button onClick={() => signIn("google")}>
+            <IoLogoGoogle /> Conectar com Google
+          </Button>
         </div>
       </section>
     </>

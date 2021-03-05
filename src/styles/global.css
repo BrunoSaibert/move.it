@@ -51,16 +51,24 @@ a {
   text-decoration: none;
 }
 
+main {
+  height: 100vh;
+  margin-left: 7rem;
+}
+@media (max-width: 60rem) {
+  main {
+    margin: 0;
+  }
+}
+
 .container {
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
-  /* margin-left: 7rem; */
   padding: 2.5rem 2rem;
 }
 @media (max-width: 60rem) {
   .container {
     padding: 0 2rem;
-    margin: 0;
   }
 }

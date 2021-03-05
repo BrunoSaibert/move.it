@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { signOut } from "next-auth/client";
+import { IoMdLogOut } from "react-icons/io";
 
 import styles from "../styles/components/SideBar.module.css";
 
@@ -27,6 +29,10 @@ export function SideBar() {
           </a>
         </Link>
       </nav>
+
+      <a href="#" onClick={() => signOut()} title="Sair do move.it">
+        <IoMdLogOut />
+      </a>
     </header>
   );
 }

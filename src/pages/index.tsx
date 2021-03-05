@@ -8,7 +8,6 @@ import { Profile } from "../components/Profile";
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 import { ChallengeBox } from "../components/ChallengeBox";
-import { SideBar } from "../components/SideBar";
 
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
@@ -29,8 +28,6 @@ export default function Home(props: HomeProps) {
       <Head>
         <title>Início | move.it</title>
       </Head>
-
-      <SideBar />
 
       <div className={`container ${styles.container}`}>
         <ExperienceBar />
