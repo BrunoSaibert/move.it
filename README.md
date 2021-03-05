@@ -46,13 +46,15 @@ O projeto foi desenvolvido durante o evento **NLW#04 - trilha de React** da [**R
 
 Para o desenvolvimento utilizamos **ReactJS** e **Next.js** com **TypeScript**.
 
+Adicionado o login com o Google.
+
 ---
 
 ## [](https://github.com/BrunoSaibert/move.it#-%EF%B8%8F-funcionalidades) ⚙️ Funcionalidades
 
 Ao acessar a aplicação é solicitada uma permissão para enviar notificações para o usuário com a finalidade de informar o final de cada ciclo.
 
-O usuário pode iniciar um ciclo de foco, quando o contador chega a zero, um alerta sonoro é emitido, além de uma notificação do navegador (caso o usuário tenha aceito as permissões). 
+O usuário pode iniciar um ciclo de foco, quando o contador chega a zero, um alerta sonoro é emitido, além de uma notificação do navegador (caso o usuário tenha aceito as permissões).
 
 Além disso, é informada uma pontuação e um desafio para que o usuário realize durante o seu intervalo do pomodoro, onde o usuário deve informar se conseguiu ou não efetuar o desafio proposto.
 
